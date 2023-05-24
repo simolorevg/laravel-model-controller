@@ -1,17 +1,15 @@
 @extends('layouts.app')
 @section('content')
-    <div class="my-container d-flex justify-content-center align-items-center">
-        <div class="row row-cols-3 g-1 d-flex justify-content-center align-items-center">
+    <div class="my-container">
+        <div class="movie-card-container">
             @foreach ($movies as $item)
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src="{{ $item->image }}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5>{{ $item->title }}</h5>
-                            <p>Titolo originale: {{ $item->original_title }}</p>
-                            <p>Uscito il: {{ $item->date }}</p>
-                            <p>Voto: {{ $item->vote }}</p>
-                        </div>
+                <div class="movie-card">
+                    <div class="movie-img">
+                        <img src="{{ $item->image }}" alt="{{ $item->title }}">
+                    </div>
+                    <div class="movie-text text-center">
+                        <h5>{{ $item->title }}</h5>
+                        <p>Uscito il: {{ $item->date }}. Voto: {{ $item->vote }}</p>
                     </div>
                 </div>
             @endforeach
