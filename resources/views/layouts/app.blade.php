@@ -17,9 +17,9 @@
 
 <body>
     @include('partials.header')
-
-
-    @yield('content')
+    <div class="app-container">
+        @yield('content')
+    </div>
 </body>
 
 </html>

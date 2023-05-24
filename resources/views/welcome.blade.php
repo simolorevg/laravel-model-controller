@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
-    <div class="container">
-        <div class="row row-cols-3 d-flex justify-content-center align-items-center">
+    <div class="my-container d-flex justify-content-center align-items-center">
+        <div class="row row-cols-3 g-1 d-flex justify-content-center align-items-center">
             @foreach ($movies as $item)
                 <div class="col">
                     <div class="card" style="width: 18rem;">

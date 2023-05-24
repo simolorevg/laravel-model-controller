@@ -1,2 +1,8 @@
 @use './partials/card-container.scss';
+@use './partials/header.scss';
 @import '~bootstrap/scss/bootstrap';
+
+.app-container {
+    width: 100%;
+    background-color: grey;
+}
