@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html>
 
 <head>
     <meta charset="utf-8">
@@ -16,6 +16,9 @@
 </head>
 
 <body>
+    @include('partials.header')
+
+
     @yield('content')
 </body>
 

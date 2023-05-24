@@ -1,8 +1,12 @@
 @extends('layouts.app')
 @section('content')
-    <ul>
-        @foreach ($movies as $item)
-            <li>{{ $item->title }}</li>
-        @endforeach
-    </ul>
+    <div class="container-fluid">
+        <div class="row row-cols-3">
+            @foreach ($movies as $item)
+                <div class="col">
+
+                </div>
+            @endforeach
+        </div>
+    </div>
 @endsection
